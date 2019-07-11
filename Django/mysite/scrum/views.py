@@ -10,7 +10,15 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
+import tempfile
+from django.core.files import File
+
+
 import  json
+import base64
+
 
 def register_team(request):
     if request.method == "POST":
@@ -41,17 +49,26 @@ def login_team(request):
                 return HttpResponse("Incorrect Password")
 
 @csrf_exempt
-def tryApi(request):
+def getRecording(request):
     # if request.method == "POST":
     #     name = request.POST.get("name")
     #     print name
     #     return HttpResponse("Hi your request is received!")
     # else:
     data = json.loads(request.body)
-    name=data["name"]
-    return HttpResponse(name)
+    file_name=data["file_name"]
+    file_data=data["file_data"]
+    audiofile_byte = base64.b64decode(file_data)
+    # file = ContentFile(audiofile_byte)
 
+    with tempfile.TemporaryFile(mode='w') as f:
+        audiofile_byte.write_to_fp(f)
+        file_name = '{}.wav'.format(file_name)
+        audiofile_byte.save(file_name, File(file=f))
 
+    # file_name = default_storage.save(file_name, file)
+
+    return HttpResponse(audiofile_byte)
 
 
 def main(request):
