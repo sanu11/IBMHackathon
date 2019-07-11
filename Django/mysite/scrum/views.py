@@ -5,6 +5,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
+import os.path
 from django.shortcuts import render , redirect
 from .models import Team
 from django.http import HttpResponse
@@ -20,6 +22,8 @@ import  json
 import base64
 
 logger = logging.getLogger(__name__)
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+
 
 def register_team(request):
     if request.method == "POST":
@@ -64,8 +68,8 @@ def getRecording(request):
     logger.debug(file_name)
     path = '~/'
     # file = ContentFile(audiofile_byte)
-
-    with open('/static/recording.wav', 'w+') as output:
+    path=SITE_ROOT+'/static/recording.wav'
+    with open(path, 'w+') as output:
         output.write(audiofile_byte)
 
     # with tempfile.TemporaryFile(mode='w') as f:
