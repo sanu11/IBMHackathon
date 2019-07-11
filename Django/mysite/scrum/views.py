@@ -83,7 +83,7 @@ def getRecording(request):
 
     # file_name = default_storage.save(file_name, file)
 
-    return HttpResponse(audiofile_byte)
+    return HttpResponse("HIIII Pooja!!!!")
 
 
 
