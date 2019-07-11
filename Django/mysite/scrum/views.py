@@ -97,15 +97,14 @@ def speechToText():
 
     speech_to_text.disable_SSL_verification()
     jsonresult = ""
-    globalData=""
     class MyRecognizeCallback(RecognizeCallback):
         def __init__(self):
             RecognizeCallback.__init__(self)
 
         def on_data(self, data):
-            global globalData
-            globalData=data
             print(json.dumps(data, indent=2))
+            with open(path2, 'w+') as transcript:
+                transcript.write(json.dumps(data, indent=2))
 
         def on_error(self, error):
             print('Error received: {}'.format(error))
@@ -125,12 +124,11 @@ def speechToText():
             interim_results=True,
             speaker_labels=True)
 
-    with open(path2,'w+') as transcript:
-        transcript.write(json.dumps(globalData, indent=2))
 
 @csrf_exempt
 def playRecording(request):
     speechToText()
+    print "called ibm watson"
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
