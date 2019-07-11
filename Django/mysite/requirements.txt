@@ -4,4 +4,7 @@ dj-static==0.0.6
 gunicorn==19.1.1
 ibm-db==3.0.1
 ibm-watson==3.1.2
-
+ibm-cloud-sdk-core==0.5.1
+ibm-cos-sdk==2.5.1
+ibm-cos-sdk-core==2.5.1
+ibm-cos-sdk-s3transfer==2.5.1
