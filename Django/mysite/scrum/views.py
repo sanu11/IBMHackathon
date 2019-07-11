@@ -17,6 +17,8 @@ from django.core.files.base import ContentFile
 import tempfile
 from django.core.files import File
 import logging
+import smtplib
+
 
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
@@ -86,10 +88,22 @@ def getRecording(request):
     return HttpResponse("HIIII Pooja!!!!")
 
 
+def writeToFile(data):
+    path2=SITE_ROOT+'/static/recording.txt'
+    with open(path2, "w+") as transcript:
+        transcript.write(json.dumps(data, indent=2))
+
+
+def sendEmail():
+    MY_ADDRESS = "ibmhackathon@gmail.com"
+    PASSWORD = "sasasadadad"
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    # s.starttls()
+    # s.login(MY_ADDRESS, PASSWORD)
+
 
 def speechToText():
     path=SITE_ROOT+'/static/recording.wav'
-    path2=SITE_ROOT+'/static/recording.txt'
     speech_to_text = SpeechToTextV1(
         iam_apikey='9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2',
         url='https://gateway-wdc.watsonplatform.net/speech-to-text/api/v1/recognize'
@@ -102,9 +116,10 @@ def speechToText():
             RecognizeCallback.__init__(self)
 
         def on_data(self, data):
-            print(json.dumps(data, indent=2))
-            with open(path2, 'w+') as transcript:
-                transcript.write(json.dumps(data, indent=2))
+            jsonData = json.dumps(data)
+            print(jsonData)
+            writeToFile(jsonData)
+            # sendEmail()
 
         def on_error(self, error):
             print('Error received: {}'.format(error))
