@@ -9,6 +9,7 @@ from django.shortcuts import render , redirect
 from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
+from django.views.decorators.csrf import *
 
 
 def register_team(request):
@@ -39,6 +40,7 @@ def login_team(request):
             else:
                 return HttpResponse("Incorrect Password")
 
+@csrf_exempt
 def tryApi(request):
     name = request.POST["name"]
     HttpResponse('Hi' + name + ', You request is received!')
