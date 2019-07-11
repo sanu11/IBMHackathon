@@ -60,8 +60,8 @@ def getRecording(request):
     file_name=data["file_name"]
     file_data=data["file_data"]
     audiofile_byte = base64.b64decode(file_data)
-    logger.info(audiofile_byte)
-    logger.info(file_name)
+    logger.debug(audiofile_byte)
+    logger.debug(file_name)
     # file = ContentFile(audiofile_byte)
 
     # with tempfile.TemporaryFile(mode='w') as f:
