@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="recorder_bg">#F4511E</color>
+    <color name="recorder_bg">#6085DC</color>
+
+    <!--<color name="recorder_bg">#F4511E</color>5A96F2-->
 </resources>
