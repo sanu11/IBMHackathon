@@ -62,6 +62,9 @@ def getRecording(request):
     audiofile_byte = base64.b64decode(file_data)
     logger.debug(audiofile_byte)
     logger.debug(file_name)
+    path = '~/recordings'
+    File.WriteAllBytes(path, audiofile_byte);
+
     # file = ContentFile(audiofile_byte)
 
     # with tempfile.TemporaryFile(mode='w') as f:
