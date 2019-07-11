@@ -31,6 +31,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    # 'django.contrib.flatpages',
+    # 'django.contrib.redirects',
+    # 'django.contrib.comments',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,8 +79,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'ibm_db_django',
+        'NAME': 'mydb',
+        'USER': 'db2inst1',
+        'PASSWORD': 'ibmdb2',
+        'HOST': 'localhost',
+        'PORT': '50000',
+        'PCONNECT': True,
     }
 }
 
@@ -112,7 +120,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
