@@ -42,8 +42,10 @@ def login_team(request):
 
 @csrf_exempt
 def tryApi(request):
-    name = request.POST["name"]
-    HttpResponse('Hi' + name + ', You request is received!')
+    if request.method == "POST":
+        name = request.POST.get("name")
+        print name
+        HttpResponse('Hi' + name + ', You request is received!')
 
 
 def main(request):
