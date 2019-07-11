@@ -10,7 +10,7 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
-
+import  json
 
 def register_team(request):
     if request.method == "POST":
@@ -42,12 +42,16 @@ def login_team(request):
 
 @csrf_exempt
 def tryApi(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        print name
-        return HttpResponse("Hi your request is received!")
-    else:
-        return HttpResponse("Error")
+    # if request.method == "POST":
+    #     name = request.POST.get("name")
+    #     print name
+    #     return HttpResponse("Hi your request is received!")
+    # else:
+    data = json.loads(request.body)
+    name=data["name"]
+    return HttpResponse(name)
+
+
 
 
 def main(request):
