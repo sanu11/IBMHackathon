@@ -83,7 +83,7 @@ def getRecording(request):
 
 @csrf_exempt
 def playRecording(request):
-    return render(request,'scrum/recording.html',{"recording":"/static/scrum.mp3","name":"recording.wav"})
+    return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
