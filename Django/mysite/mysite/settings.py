@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite',
+    'scrum'
 ]
 
 MIDDLEWARE = [
@@ -76,18 +77,29 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'ibm_db_django',
+#         'NAME': 'mydb',
+#         'USER': 'db2inst1',
+#         'PASSWORD': 'ibmdb2',
+#         'HOST': 'localhost',
+#         'PORT': '50000',
+#         'PCONNECT': True,
+#     }
+# }
+
+
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DATABASES = {
     'default': {
-        'ENGINE': 'ibm_db_django',
-        'NAME': 'mydb',
-        'USER': 'db2inst1',
-        'PASSWORD': 'ibmdb2',
-        'HOST': 'localhost',
-        'PORT': '50000',
-        'PCONNECT': True,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_DIR, 'scrum.db'),
     }
 }
+
 
 
 # Password validation
