@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halcyon Days - An Exclusive Freebie for Codrops</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body id="top">
+    <header id="home">
+
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center inner">
+                        <h1 class="animated fadeInDown">CREATE A MEETING<span>with memebers</span></h1>
+                        <p class="animated fadeInUp delay-05s">This is description <em>CONTENT</em></p>
+                    </div>
+                </div>
+                <form class="text-center">
+            </div>
+            </div>
+        </section>
+
+        <div id="header">
+            <span class="logo icon fa-paper-plane"></span>
+            <h1>Hi. This is Title.</h1>
+            <p>A responsive HTML5 + CSS3 site template designed by
+                <br />
+            </p>
+            <ul class="actions special">
+                <li><a href="#" class="button">Login</a></li>
+            </ul>
+        </div>
+
+        <!-- Main -->
+        <div id="main">
+            <h2>Group Members</h2>
+            <div class="row">
+                <div class="col-6 col-12-mobilep">
+                    <label for="name">Name</label>
+                    <input class="text" type="text" name="name" id="myInputName" value="" placeholder="" />
+                </div>
+                <div class="col-6 col-12-mobilep">
+                    <label for="email">Email</label>
+                    <input class="text" type="text" name="email" id="myInputEmail" value="" placeholder="" />
+                </div>
+                <div class="container">
+                    <span onclick="newElement()" class="button" type="submit">Add</span>
+                </div>
+            </div>
+
+            <div id="myUL">
+                <label class="inputINFO" id="checkedstyle"></label>
+            </div>
+
+            <script>
+                var close = document.getElementsByClassName("inputINFO");
+                var i;
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                        var div = this.parentElement;
+                        div.style.display = "none";
+                    }
+                }
+
+
+                function newElement() {
+                    var li = document.createElement("li");
+                    var inputValue = document.getElementById("myInputName").value;
+                    var inputValue2 = document.getElementById("myInputEmail").value;
+                    var conbine = inputValue + inputValue2;
+                    var t = document.createTextNode(conbine);
+                    li.appendChild(t);
+                    if (inputValue === '' || inputValue2 === '') {
+                        alert("You must fill out both name and email!");
+                    } else {
+                        document.getElementById("myUL").appendChild(li);
+                    }
+                    document.getElementById("myInputName").value = "";
+                    document.getElementById("myInputEmail").value = "";
+
+                    var span = document.createElement("SPAN");
+                    var txt = document.createTextNode("\u00D7");
+                    span.className = "inputINFO";
+                    span.appendChild(txt);
+                    li.appendChild(span);
+
+                    for (i = 0; i < close.length; i++) {
+                        close[i].onclick = function() {
+                            var div = this.parentElement;
+                            div.style.display = "none";
+                        }
+                    }
+                }
+            </script>
+
+
+
+            <!-- <footer class="major container medium">
+                <h3>Start A Meeting</h3>
+                <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+                <ul class="actions special">
+                    <li><a href="#" class="button">Go!</a></li>
+                </ul>
+            </footer>
+        </div> -->
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+</body>
+
+</html>
