@@ -45,7 +45,9 @@ def tryApi(request):
     if request.method == "POST":
         name = request.POST.get("name")
         print name
-        return HttpResponse('Hi' + name + ', You request is received!')
+        return HttpResponse("Hi your request is received!")
+    else:
+        return HttpResponse("Error")
 
 
 def main(request):
