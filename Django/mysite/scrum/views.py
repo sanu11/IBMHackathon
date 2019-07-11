@@ -18,6 +18,10 @@ import tempfile
 from django.core.files import File
 import logging
 
+from ibm_watson import SpeechToTextV1
+from ibm_watson.websocket import RecognizeCallback, AudioSource
+import json
+
 import  json
 import base64
 
@@ -81,8 +85,52 @@ def getRecording(request):
 
     return HttpResponse(audiofile_byte)
 
+
+
+def speechToText():
+    path=SITE_ROOT+'/static/recording.wav'
+    path2=SITE_ROOT+'/static/recording.txt'
+    speech_to_text = SpeechToTextV1(
+        iam_apikey='9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2',
+        url='https://gateway-wdc.watsonplatform.net/speech-to-text/api/v1/recognize'
+    )
+
+    speech_to_text.disable_SSL_verification()
+    jsonresult = ""
+    globalData=""
+    class MyRecognizeCallback(RecognizeCallback):
+        def __init__(self):
+            RecognizeCallback.__init__(self)
+
+        def on_data(self, data):
+            global globalData
+            globalData=data
+            print(json.dumps(data, indent=2))
+
+        def on_error(self, error):
+            print('Error received: {}'.format(error))
+
+        def on_inactivity_timeout(self, error):
+            print('Inactivity timeout: {}'.format(error))
+
+    myRecognizeCallback = MyRecognizeCallback()
+
+    with open(path, 'rb') as audio_file:
+        audio_source = AudioSource(audio_file)
+        speech_to_text.recognize_using_websocket(
+            audio=audio_source,
+            content_type='audio/mp3',
+            recognize_callback=myRecognizeCallback,
+            model='en-US_BroadbandModel',
+            interim_results=True,
+            speaker_labels=True)
+
+    with open(path2,'w+') as transcript:
+        transcript.write(json.dumps(globalData, indent=2))
+
 @csrf_exempt
 def playRecording(request):
+    speechToText()
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
