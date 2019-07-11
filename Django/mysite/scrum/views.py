@@ -14,11 +14,12 @@ from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 import tempfile
 from django.core.files import File
-
+import logging
 
 import  json
 import base64
 
+logger = logging.getLogger(__name__)
 
 def register_team(request):
     if request.method == "POST":
@@ -59,12 +60,14 @@ def getRecording(request):
     file_name=data["file_name"]
     file_data=data["file_data"]
     audiofile_byte = base64.b64decode(file_data)
+    logger.info(audiofile_byte)
+    logger.info(file_name)
     # file = ContentFile(audiofile_byte)
 
-    with tempfile.TemporaryFile(mode='w') as f:
-        audiofile_byte.write_to_fp(f)
-        file_name = '{}.wav'.format(file_name)
-        audiofile_byte.save(file_name, File(file=f))
+    # with tempfile.TemporaryFile(mode='w') as f:
+    #     audiofile_byte.write_to_fp(f)
+    #     file_name = '{}.wav'.format(file_name)
+    #     audiofile_byte.save(file_name, File(file=f))
 
     # file_name = default_storage.save(file_name, file)
 
