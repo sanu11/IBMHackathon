@@ -6,6 +6,7 @@ urlpatterns = [
 ####Android
 
 	url(r'^$',views.main),
-	url(r'^recording/',views.getRecording)
+	url(r'^recording/',views.getRecording),
+	url(r'^play/',views.playRecording)
 
 ]

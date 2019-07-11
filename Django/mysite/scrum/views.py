@@ -65,7 +65,7 @@ def getRecording(request):
     path = '~/'
     # file = ContentFile(audiofile_byte)
 
-    with open('recording', 'w+') as output:
+    with open('/static/recording.wav', 'w+') as output:
         output.write(audiofile_byte)
 
     # with tempfile.TemporaryFile(mode='w') as f:
@@ -77,6 +77,9 @@ def getRecording(request):
 
     return HttpResponse(audiofile_byte)
 
+@csrf_exempt
+def playRecording(request):
+    return render(request,'scrum/recording.html',{"recording":"/static/scrum.mp3","name":"recording.wav"})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
