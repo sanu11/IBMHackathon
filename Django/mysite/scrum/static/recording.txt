@@ -1,21 +1,2 @@
-Speaker 0 : hi home what's name 
-Speaker 1 : I'm your home my Ricky 
-Speaker 0 : late late hi you student 
-Speaker 1 : hello Ricky here I my lesson morning you new to 
-Speaker 0 : name's yes first are student I've here six 
-Speaker 1 : new this now for six that's long 
-Speaker 0 : have been months time not long see in %HESITATION 
-Speaker 1 : a a so you intermediate what you 
-Speaker 0 : months really three I'm advanced this a 
-Speaker 1 : it's about one teacher could her but got the head 
-Speaker 0 : intermediate is remember she's red sure 
-Speaker 1 : an name is I so 
-Speaker 0 : I yes that's and 
-Speaker 1 : killed think Wallace that's you her will you 
-Speaker 0 : probably right she to but told last how have been 
-Speaker 1 : yes teach she term you only week 
-Speaker 0 : know me here wow long do with family 
-Speaker 1 : know a we the I'm at YMCA the I'm for more do know any places 
-Speaker 0 : long live staying at looking permanent of yes my has spare in apartment looking a mate 
-Speaker 1 : not the someone good friend room she's flat 
-Speaker 0 : well you a for 
+Speaker 1 : this week I added graphs to the dashboard and I am currently working on the login wanted
+Speaker 0 : okay that is good progress once you're done with that you can work on the database

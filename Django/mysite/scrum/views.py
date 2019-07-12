@@ -271,11 +271,14 @@ def sendEmail():
 def watson():
     path = SITE_ROOT + '/static'
     path2 = SITE_ROOT+'/static'
-    parse.parse_audio(path)
-    con_file=parse.convert()
-    with open(path2+'/recording.txt','w+') as f:
-        for i in con_file:
-            f.write(i+"\n")
+    qdata = parse.parse_audio(path)
+
+    # con_file=parse.convert(path)
+    # with open(path2+'/recording.txt','w+') as f:
+    #     for i in con_file:
+    #         f.write(i+"\n")
+    return qdata
+            
 
 @csrf_exempt
 def createSuperUser(request):
@@ -285,19 +288,16 @@ def createSuperUser(request):
 
 @csrf_exempt
 def playRecording(request):
-<<<<<<< HEAD
     # return HttpResponse("WORKING")
-=======
-    return HttpResponse("WORKING")
->>>>>>> c7a875718b75d6ac3d42b10c68323e73421f98d1
     path=SITE_ROOT+'/static/recording.mp3'
-    watson()
+    qdata = watson()
     print "called ibm watson"
-    # storeRecordingToCloud(path)
-    # print "stored data to file"
-    # sendEmail()
-    # print "email sent"
-    # return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
+    # return HttpResponse("WORKING")
+    storeRecordingToCloud(path)
+    print "stored data to file"
+    sendEmail()
+    print "email sent"
+    return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3","data":qdata})
 
 def main(request):
     return render(request, 'scrum/index.html', {})

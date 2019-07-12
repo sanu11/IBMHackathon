@@ -6,7 +6,7 @@ urlpatterns = [
 ####web
 
 	url(r'^$',views.main),
-	url(r'^recording/',views.playRecording),
+	url(r'^play/',views.playRecording),
 	url(r'^login/', views.get_login_page),
 	url(r'^logincheck/', views.get_login_page),
 
