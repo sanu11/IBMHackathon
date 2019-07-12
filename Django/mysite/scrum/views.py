@@ -125,7 +125,8 @@ SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
 def get_login_page(request):
-    return render(request,'scrum/login.html',{"recording":"/static/recording.wav","name":""})
+    return render(request,'scrum/login.html',{})
+
 
 def register_team(request):
     if request.method == "POST":
