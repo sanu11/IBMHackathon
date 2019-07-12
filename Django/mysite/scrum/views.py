@@ -12,7 +12,7 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
-from ..scrum import parse
+import parse
 import logging
 from datetime import datetime
 from ibm_watson import SpeechToTextV1

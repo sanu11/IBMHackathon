@@ -67,3 +67,64 @@ SMTPAuthenticationError: (535, '5.7.8 Username and Password not accepted. Learn 
 "GET /play/ HTTP/1.1" 500 59
 - Broken pipe from ('127.0.0.1', 63839)
 
+"GET / HTTP/1.1" 200 12111
+"GET /static/assets/css/fontawesome-all.min.css HTTP/1.1" 200 16384
+- Broken pipe from ('127.0.0.1', 64004)
+
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2576
+- Broken pipe from ('127.0.0.1', 64005)
+
+Internal Server Error: /play/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 315, in playRecording
+    sendEmail()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 266, in sendEmail
+    email.send()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 70, in send
+    s.login(self.sender, self.senderpass)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/smtplib.py", line 622, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (535, '5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials y17sm5811257ioa.40 - gsmtp')
+"GET /play/ HTTP/1.1" 500 81173
+"GET / HTTP/1.1" 200 12111
+"GET /play/ HTTP/1.1" 200 215
+"GET /static/recording.wav HTTP/1.1" 200 1004429
+"GET / HTTP/1.1" 200 12111
+"GET /static/assets/css/fontawesome-all.min.css HTTP/1.1" 200 16384
+- Broken pipe from ('127.0.0.1', 64637)
+
+Internal Server Error: /play/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 322, in playRecording
+    watson()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 314, in watson
+    con_file=parse.convert()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/parse.py", line 60, in convert
+    d = json.load(f)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 290, in load
+    **kw)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+"GET /play/ HTTP/1.1" 500 90362
