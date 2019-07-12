@@ -298,7 +298,7 @@ def playRecording(request):
     return render(request,'scrum/home.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
 
 def main(request):
-    return render(request, 'scrum/index.html', {})
+    return render(request, 'scrum/home.html', {})
 
 def saveRecording(request):
     print "saved recording to bluemix and the path in the table"
