@@ -14,7 +14,7 @@ from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
 
 import logging
-import datetime
+from datetime import datetime
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 import ibm_boto3
