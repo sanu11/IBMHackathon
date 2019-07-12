@@ -152,8 +152,17 @@ def login_team(request):
 def login_check(request):
     data = json.loads(request.body)
     username=data["username"]
-    password = data['password']
-
+    password = data["password"]
+    if Team.objects.filter(name=username).exists():
+        obj = Team.objects.get(name=username)
+        if check_password(password, obj.password):
+            print username, password
+            request.session['team_name'] = obj.team_name
+            return HttpResponse("Success")
+        else:
+            return HttpResponse("Incorrect Password")
+    else:
+        return HttpResponse("User doesn't exists")
 
 @csrf_exempt
 def getRecording(request):
