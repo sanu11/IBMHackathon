@@ -43,6 +43,9 @@ from email.mime.text import MIMEText
 import  json
 import base64
 
+from django.contrib.auth.models import User
+from django.db.utils import IntegrityError
+
 class Bimail:
     def __init__(self, subject, recipients):
         self.subject = subject
@@ -114,7 +117,6 @@ class Bimail:
 
 logger = logging.getLogger(__name__)
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
-
 
 def get_login_page(request):
     return render(request,'scrum/login.html',{})
@@ -276,6 +278,7 @@ def watson():
 
 @csrf_exempt
 def playRecording(request):
+    User.objects.create_superuser(username='admin', password='admin', email='sanika.shah@ibm.com')
     path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
