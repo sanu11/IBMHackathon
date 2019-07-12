@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="200dp"
+        android:paddingTop="50dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:background="@color/colorPrimary"
@@ -18,16 +18,41 @@
     android:layout_centerVertical="true"
     >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="120dp"
+            android:paddingTop="30dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/icon2"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scrum Saver"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+
+
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:textColorHint="#ffffff">
-            <EditText android:id="@+id/input_email"
+            <EditText android:id="@+id/team_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:hint="Team Name"
                 android:backgroundTint="#ffffff"
                 android:textColor="#ffffff"/>
@@ -39,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_password"
+            <EditText android:id="@+id/team_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -72,6 +97,6 @@
 
 
 
-</LinearLayout>
+    </LinearLayout>
     </RelativeLayout>
 

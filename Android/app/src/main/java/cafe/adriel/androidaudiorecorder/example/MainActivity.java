@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String currentDateandTime = sdf.format(new Date());
     String FILENAME=currentDateandTime;
     private static final String AUDIO_FILE_PATH =
-            Environment.getExternalStorageDirectory().getPath() + "/"+currentDateandTime+"_transcript.wav";
+            Environment.getExternalStorageDirectory().getPath() + "/"+currentDateandTime+"_transcript.mp3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_RECORD_AUDIO) {
             if (resultCode == RESULT_OK) {
+                Toast.makeText(this, "Audio was recorded", Toast.LENGTH_SHORT).show();
                 /*IamOptions options = new IamOptions.Builder()
                         .apiKey("9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2")
                         .build();
                 SpeechToText speechToText = new SpeechToText(options);
                 speechToText.setEndPoint("https://gateway-wdc.watsonplatform.net/speech-to-text/api");*/
                 //Toast.makeText(this,AUDIO_FILE_PATH,Toast.LENGTH_LONG).show();
-                Toast.makeText(this, "Audio recorded successfully!", Toast.LENGTH_SHORT).show();
 //                call rest api
 
                 JSONObject obj = new JSONObject();
@@ -85,11 +85,11 @@ public class MainActivity extends AppCompatActivity {
                     byte[] fileAudioByte = out.toByteArray();
 
                     String encodedString = Base64.encodeToString(fileAudioByte, Base64.DEFAULT);
-                    obj.put("file_name", "transcript");
+                    obj.put("file_name", FILENAME);
                     obj.put("file_data",encodedString);
                     Api_Call api_call = new Api_Call();
                     api_call.execute(obj.toString()).get();
-
+                    Toast.makeText(this, "Audio was recorded", Toast.LENGTH_SHORT).show();
 
                 }
                 catch (Exception e){

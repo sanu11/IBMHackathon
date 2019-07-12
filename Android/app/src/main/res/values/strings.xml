@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Meeting Recorder</string>
+    <string name="app_name">ScrumSaver</string>
     <string name="title_activity_login">Login</string>
 </resources>
