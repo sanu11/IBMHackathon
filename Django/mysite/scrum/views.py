@@ -12,7 +12,7 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
-
+from ..scrum import parse
 import logging
 from datetime import datetime
 from ibm_watson import SpeechToTextV1
@@ -265,52 +265,61 @@ def sendEmail():
     email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
     email.send()
 
-def speechToText():
-    path=SITE_ROOT+'/static/recording.wav'
-    speech_to_text = SpeechToTextV1(
-        iam_apikey='9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2',
-        url='https://gateway-wdc.watsonplatform.net/speech-to-text/api/v1/recognize'
-    )
+# def speechToText():
+#     path=SITE_ROOT+'/static/recording.wav'
+#     speech_to_text = SpeechToTextV1(
+#         iam_apikey='9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2',
+#         url='https://gateway-wdc.watsonplatform.net/speech-to-text/api/v1/recognize'
+#     )
+#
+#     speech_to_text.disable_SSL_verification()
+#     jsonresult = ""
+#     class MyRecognizeCallback(RecognizeCallback):
+#         def __init__(self):
+#             RecognizeCallback.__init__(self)
+#
+#         def on_data(self, data):
+#             jsonData = json.dumps(data)
+#             print(jsonData)
+#             writeToFile(jsonData)
+#             print "written to file"
+#             storeRecordingToCloud(path)
+#             print "stored to cloud"
+#             sendEmail()
+#             print "hopefully sent email"
+#
+#         def on_error(self, error):
+#             print('Error received: {}'.format(error))
+#
+#         def on_inactivity_timeout(self, error):
+#             print('Inactivity timeout: {}'.format(error))
+#
+#     myRecognizeCallback = MyRecognizeCallback()
+#
+#     with open(path, 'rb') as audio_file:
+#         audio_source = AudioSource(audio_file)
+#         speech_to_text.recognize_using_websocket(
+#             audio=audio_source,
+#             content_type='audio/mp3',
+#             recognize_callback=myRecognizeCallback,
+#             model='en-US_BroadbandModel',
+#             interim_results=True,
+#             speaker_labels=True)
 
-    speech_to_text.disable_SSL_verification()
-    jsonresult = ""
-    class MyRecognizeCallback(RecognizeCallback):
-        def __init__(self):
-            RecognizeCallback.__init__(self)
 
-        def on_data(self, data):
-            jsonData = json.dumps(data)
-            print(jsonData)
-            writeToFile(jsonData)
-            print "written to file"
-            storeRecordingToCloud(path)
-            print "stored to cloud"
-            sendEmail()
-            print "hopefully sent email"
-
-        def on_error(self, error):
-            print('Error received: {}'.format(error))
-
-        def on_inactivity_timeout(self, error):
-            print('Inactivity timeout: {}'.format(error))
-
-    myRecognizeCallback = MyRecognizeCallback()
-
-    with open(path, 'rb') as audio_file:
-        audio_source = AudioSource(audio_file)
-        speech_to_text.recognize_using_websocket(
-            audio=audio_source,
-            content_type='audio/mp3',
-            recognize_callback=myRecognizeCallback,
-            model='en-US_BroadbandModel',
-            interim_results=True,
-            speaker_labels=True)
-
+def watson():
+    path = SITE_ROOT + '/static/recording.wav'
+    path2 = SITE_ROOT+'/static'
+    parse.parse_audio(path)
+    con_file=parse.convert()
+    with open(path2+'/recording.txt') as f:
+        for i in con_file:
+            f.write(i+"\n")
 
 @csrf_exempt
 def playRecording(request):
     path=SITE_ROOT+'/static/recording.wav'
-    speechToText()
+    watson()
     print "called ibm watson"
     logger.debug("ibm watson called!")
     # writeToFile("sanika sHsah sanika shaha sanika shaha")
