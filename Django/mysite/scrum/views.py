@@ -112,14 +112,6 @@ class Bimail:
         self.attachments = self.attachments + files
 
 
-
-
-
-
-
-
-
-
 logger = logging.getLogger(__name__)
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -156,6 +148,13 @@ def login_team(request):
             else:
                 return HttpResponse("Incorrect Password")
 
+
+def login_check(request):
+    data = json.loads(request.body)
+    username=data["username"]
+    password = data['password']
+
+
 @csrf_exempt
 def getRecording(request):
     # if request.method == "POST":
@@ -170,7 +169,7 @@ def getRecording(request):
 
     path = '~/'
     # file = ContentFile(audiofile_byte)
-    path=SITE_ROOT+'/static/recording.wav'
+    path=SITE_ROOT+'/static/recording.mp3'
     with open(path, 'w+') as output:
         output.write(audiofile_byte)
 
@@ -181,7 +180,7 @@ def getRecording(request):
 
     # file_name = default_storage.save(file_name, file)
 
-    return HttpResponse("HIIII Pooja!!!!")
+    return HttpResponse("Success")
 
 
 def writeToFile(data):
@@ -207,7 +206,7 @@ def storeRecordingToCloud(recording_path):
                              config=Config(signature_version="oauth"),
                              endpoint_url=COS_ENDPOINT
                              )
-    multi_part_upload(cos,"hackathon-recordings","recording.wav",recording_path)
+    multi_part_upload(cos,"hackathon-recordings","recording.mp3",recording_path)
 
 
 def multi_part_upload(cos,bucket_name, item_name, file_path):
@@ -252,59 +251,9 @@ def get_item(cos,bucket_name, item_name):
 
 
 def sendEmail():
-    # toaddrs = 'sanika.shah@ibm.com'
-    # msg = 'Why,Oh why sanika!'
-    #
-    # username = "ibmhackathon89@gmail.com"
-    # password = "ibmhackathon"
-    # server = smtplib.SMTP('smtp.gmail.com:587')
-    # server.starttls()
-    # server.login(username, password)
-    # server.sendmail(username, toaddrs, msg)
-    # server.quit()
-    email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
+    email_receipents =  ['sanika.shah@ibm.com','pooja.patel1@ibm.com','ryan.kelly@ibm.com','huan.wu@ibm.com','kishan.agarwal@ibm.com','manjari.subramani@ibm.com']
+    email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), email_receipents)
     email.send()
-
-# def speechToText():
-#     path=SITE_ROOT+'/static/recording.wav'
-#     speech_to_text = SpeechToTextV1(
-#         iam_apikey='9e0ri-mtT_R8DicTjLTNkRe9T1WJFxHdkFBYobAmlxp2',
-#         url='https://gateway-wdc.watsonplatform.net/speech-to-text/api/v1/recognize'
-#     )
-#
-#     speech_to_text.disable_SSL_verification()
-#     jsonresult = ""
-#     class MyRecognizeCallback(RecognizeCallback):
-#         def __init__(self):
-#             RecognizeCallback.__init__(self)
-#
-#         def on_data(self, data):
-#             jsonData = json.dumps(data)
-#             print(jsonData)
-#             writeToFile(jsonData)
-#             print "written to file"
-#             storeRecordingToCloud(path)
-#             print "stored to cloud"
-#             sendEmail()
-#             print "hopefully sent email"
-#
-#         def on_error(self, error):
-#             print('Error received: {}'.format(error))
-#
-#         def on_inactivity_timeout(self, error):
-#             print('Inactivity timeout: {}'.format(error))
-#
-#     myRecognizeCallback = MyRecognizeCallback()
-#
-#     with open(path, 'rb') as audio_file:
-#         audio_source = AudioSource(audio_file)
-#         speech_to_text.recognize_using_websocket(
-#             audio=audio_source,
-#             content_type='audio/mp3',
-#             recognize_callback=myRecognizeCallback,
-#             model='en-US_BroadbandModel',
-#             interim_results=True,
-#             speaker_labels=True)
 
 
 def watson():
@@ -318,14 +267,14 @@ def watson():
 
 @csrf_exempt
 def playRecording(request):
-    path=SITE_ROOT+'/static/recording.wav'
+    path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
     logger.debug("ibm watson called!")
     # writeToFile("sanika sHsah sanika shaha sanika shaha")
     # storeRecordingToCloud(path)
     # sendEmail()
-    return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
+    return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
