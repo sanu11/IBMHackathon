@@ -12,16 +12,21 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
-from django.core.files.storage import default_storage
-from django.core.files.base import ContentFile
-import tempfile
-from django.core.files import File
+
 import logging
-import smtplib
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 import ibm_boto3
 from ibm_botocore.client import Config, ClientError
+
+
+# email apis
+import smtplib
+from email.mime.application import MIMEApplication
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.utils import COMMASPACE, formatdate
+
 
 import json
 
@@ -93,7 +98,7 @@ def writeToFile(data):
     with open(path2, "w+") as transcript:
         transcript.write(json.dumps(data, indent=2))
 
-def storeRecordingToCloud():
+def storeRecordingToCloud(recording_path):
 
     # Constants for IBM COS values
     COS_ENDPOINT = "https://s3.us-south.cloud-object-storage.appdomain.cloud"  # Current list avaiable at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
@@ -110,7 +115,7 @@ def storeRecordingToCloud():
                              config=Config(signature_version="oauth"),
                              endpoint_url=COS_ENDPOINT
                              )
-    multi_part_upload(cos,"hackathon-recordings","recording.wav",'/static/recording.wav')
+    multi_part_upload(cos,"hackathon-recordings","recording.wav",recording_path)
 
 
 def multi_part_upload(cos,bucket_name, item_name, file_path):
@@ -184,6 +189,7 @@ def speechToText():
             jsonData = json.dumps(data)
             print(jsonData)
             writeToFile(jsonData)
+            storeRecordingToCloud('/static/recording.wav')
             sendEmail()
 
         def on_error(self, error):
