@@ -4,9 +4,9 @@
 
 <b>Important links to the app</b>
 Register Page:
-Login Page: http://demointernhack2019.mybluemix.net/login/
-Register Page: http://demointernhack2019.mybluemix.net/register/
-Main Page: http://demointernhack2019.mybluemix.net/
+Login Page: http://demointernhack2019.mybluemix.net/login/ <br>
+Register Page: http://demointernhack2019.mybluemix.net/register/ <br>
+Main Page: http://demointernhack2019.mybluemix.net/ <br>
 
 
 
