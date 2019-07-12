@@ -14,7 +14,7 @@ from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
 
 import logging
-import mail
+from mail import Bimail
 import datetime
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
@@ -172,7 +172,7 @@ def sendEmail():
     # server.login(username, password)
     # server.sendmail(username, toaddrs, msg)
     # server.quit()
-    email = mail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
+    email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
     email.send()
 
 def speechToText():
