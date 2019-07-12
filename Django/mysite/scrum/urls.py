@@ -3,11 +3,13 @@ from scrum import views
 
 urlpatterns = [
 
-####Android
+####web
 
 	url(r'^$',views.main),
 	url(r'^recording/',views.playRecording),
 	url(r'^login/', views.get_login_page),
+	url(r'^logincheck/', views.get_login_page),
+
 	# android
 	url(r'^recording/', views.getRecording),
 	url(r'^verify/', views.login_check),
