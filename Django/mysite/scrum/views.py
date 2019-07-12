@@ -264,6 +264,7 @@ def get_item(cos,bucket_name, item_name):
 def sendEmail():
     email_receipents =  ['sanika.shah@ibm.com','pooja.patel1@ibm.com','ryan.kelly@ibm.com','huan.wu@ibm.com','kishan.agarwal@ibm.com','manjari.subramani@ibm.com']
     email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), email_receipents)
+    email.addattach([SITE_ROOT+'/static/recording.txt'])
     email.send()
 
 
