@@ -308,7 +308,7 @@ def sendEmail():
 
 
 def watson():
-    path = SITE_ROOT + '/static/recording.wav'
+    path = SITE_ROOT + '/static'
     path2 = SITE_ROOT+'/static'
     parse.parse_audio(path)
     con_file=parse.convert()
