@@ -20,7 +20,7 @@ Register and login on webapp - backend and frontend code is ready, integration i
 Summarizing the scrum <br>
 Advanced search/filter on text converted from audio <br>
 
-<b> About</b>
+<b> About:</b><br>
 There are times when you cannot recall what was discussed in the scrum meetings and don’t really want to go back and ask the same question again Or maybe you missed a scrum meeting and want to be updated about what is going on
 
 ScrumSaverapplication is a savior and friendly application that helps users to review and save transcripts of a scrum meeting that can be accessed at all times. Having a audio conversation as a transcript is a convenient way to access and store the important information for future access.
