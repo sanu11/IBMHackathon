@@ -1,0 +1,45 @@
+"GET / HTTP/1.1" 200 12111
+"GET /static/assets/js/main.js HTTP/1.1" 200 680
+"GET /static/assets/js/breakpoints.min.js HTTP/1.1" 200 2439
+"GET /static/assets/js/util.js HTTP/1.1" 200 12433
+"GET /static/assets/js/browser.min.js HTTP/1.1" 200 1851
+"GET /static/assets/css/main.css HTTP/1.1" 200 52986
+"GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+"GET /static/assets/css/fontawesome-all.min.css HTTP/1.1" 200 55967
+"GET /static/assets/css/images/top-3200.svg HTTP/1.1" 200 893
+"GET /static/assets/css/images/overlay.png HTTP/1.1" 200 2105
+"GET /static/assets/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13580
+"GET /static/images/header.jpg HTTP/1.1" 200 39278
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2576
+"GET /play HTTP/1.1" 301 0
+Internal Server Error: /play/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 314, in playRecording
+    sendEmail()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 265, in sendEmail
+    email = Bimail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
+AttributeError: 'module' object has no attribute 'now'
+"GET /play/ HTTP/1.1" 500 69490
+"GET / HTTP/1.1" 200 12111
+"GET /static/assets/js/browser.min.js HTTP/1.1" 200 1851
+"GET /static/assets/js/breakpoints.min.js HTTP/1.1" 200 2439
+"GET /static/assets/css/main.css HTTP/1.1" 200 52986
+"GET /static/assets/js/main.js HTTP/1.1" 200 680
+"GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+"GET /static/assets/js/util.js HTTP/1.1" 200 12433
+"GET /static/assets/css/fontawesome-all.min.css HTTP/1.1" 200 55967
+"GET /static/assets/css/images/top-1600.svg HTTP/1.1" 200 893
+"GET /static/assets/css/images/overlay.png HTTP/1.1" 200 2105
+"GET /static/images/header.jpg HTTP/1.1" 200 39278
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2576
+"GET /static/assets/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13580
