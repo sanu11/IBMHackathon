@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5baa1c4f-97fe-4c9f-bbeb-18a3a0fa87e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysite/scrum/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/scrum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,18 +37,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/scrum/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -58,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
@@ -82,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="387">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -107,9 +94,14 @@
         <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -135,7 +127,6 @@
       <find>send</find>
       <find>Why</find>
       <find>sendM</find>
-      <find>static</find>
       <find>WHY</find>
       <find>site_root</find>
       <find>watson</find>
@@ -143,6 +134,7 @@
       <find>wav</find>
       <find>get_login</find>
       <find>login_che</find>
+      <find>static</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,10 +150,10 @@
         <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/mail.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/mail.py" />
-        <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" />
         <option value="$PROJECT_DIR$/mysite/scrum/parse.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/urls.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/views.py" />
+        <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" />
       </list>
     </option>
   </component>
@@ -266,12 +258,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562800121214</updated>
       <workItem from="1562800122290" duration="725000" />
-      <workItem from="1562801123184" duration="28715000" />
+      <workItem from="1562801123184" duration="28817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29440000" />
+    <option name="totallyTimeSpent" value="29542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
@@ -350,13 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -381,20 +366,6 @@
           <folding>
             <element signature="e#13#23#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="283" column="32" selection-start-line="283" selection-start-column="32" selection-end-line="283" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -425,6 +396,30 @@
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="283" column="32" selection-start-line="283" selection-start-column="32" selection-end-line="283" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
         </state>
       </provider>
     </entry>
