@@ -7,4 +7,3 @@ ibm-cloud-sdk-core==0.5.1
 ibm-cos-sdk==2.5.1
 ibm-cos-sdk-core==2.5.1
 ibm-cos-sdk-s3transfer==2.5.1
-ibm-db==3.0.1
