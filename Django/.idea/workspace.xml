@@ -2,10 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5baa1c4f-97fe-4c9f-bbeb-18a3a0fa87e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysite/scrum/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/bottom-1280.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/bottom-1600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/bottom-3200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/top-1280.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/top-1600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/top-3200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/images/xoverlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/js/breakpoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/js/browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_html-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/libs/_vendor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/assets/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/h1-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/iphone-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/keyboard-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/l1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/pic01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/pic02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/pic03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/plants-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/portfolio-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/portfolio-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/portfolio-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/team-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/team-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/static/images/team-03.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/scrum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login page/pageAfterLogin.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,15 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#form#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#submit#0;n#div#0;n#div#2;n#div#0;n#form#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -31,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="245">
+              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -57,11 +107,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/scrum/static/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
@@ -73,11 +118,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="272" column="18" selection-start-line="272" selection-start-column="18" selection-end-line="272" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="285" column="27" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="27" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -98,14 +152,9 @@
         <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4087">
-              <caret line="288" column="37" lean-forward="true" selection-start-line="288" selection-start-column="37" selection-end-line="288" selection-end-column="37" />
+              <caret line="288" column="37" selection-start-line="288" selection-start-column="37" selection-end-line="288" selection-end-column="37" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/scrum/static/images/hero-bg.jpg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -131,6 +180,7 @@
       <find>login_che</find>
       <find>static</find>
       <find>image</find>
+      <find>recording</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,9 +199,10 @@
         <option value="$PROJECT_DIR$/mysite/scrum/static/css/styles.css" />
         <option value="$PROJECT_DIR$/mysite/scrum/urls.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html" />
-        <option value="$PROJECT_DIR$/mysite/scrum/views.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/parse.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" />
+        <option value="$PROJECT_DIR$/mysite/scrum/views.py" />
+        <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/home.html" />
       </list>
     </option>
   </component>
@@ -249,12 +300,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562800121214</updated>
       <workItem from="1562800122290" duration="725000" />
-      <workItem from="1562801123184" duration="32070000" />
+      <workItem from="1562801123184" duration="32557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32795000" />
+    <option name="totallyTimeSpent" value="33282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
@@ -340,13 +391,6 @@
           <folding>
             <element signature="e#13#23#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -442,7 +486,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4087">
-          <caret line="288" column="37" lean-forward="true" selection-start-line="288" selection-start-column="37" selection-end-line="288" selection-end-column="37" />
+          <caret line="288" column="37" selection-start-line="288" selection-start-column="37" selection-end-line="288" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -452,23 +496,6 @@
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="272" column="18" selection-start-line="272" selection-start-column="18" selection-end-line="272" selection-end-column="18" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,11 +513,38 @@
     <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/recording.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/pageAfterLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="285" column="27" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#form#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#submit#0;n#div#0;n#div#2;n#div#0;n#form#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/templates/scrum/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
         </state>
       </provider>
     </entry>

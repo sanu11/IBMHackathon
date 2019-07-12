@@ -271,10 +271,10 @@ def watson():
     path = SITE_ROOT + '/static'
     path2 = SITE_ROOT+'/static'
     parse.parse_audio(path)
-    con_file=parse.convert()
-    with open(path2+'/recording.txt') as f:
-        for i in con_file:
-            f.write(i+"\n")
+    # con_file=parse.convert()
+    # with open(path2+'/recording.txt') as f:
+    #     for i in con_file:
+    #         f.write(i+"\n")
 
 @csrf_exempt
 def createSuperUser(request):
@@ -287,11 +287,11 @@ def playRecording(request):
     path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
-    # storeRecordingToCloud(path)
-    # print "stored data to file"
-    # sendEmail()
-    # print "email sent"
-    # return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
+    storeRecordingToCloud(path)
+    print "stored data to file"
+    sendEmail()
+    print "email sent"
+    return render(request,'scrum/home.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
