@@ -282,8 +282,11 @@ def speechToText():
             jsonData = json.dumps(data)
             print(jsonData)
             writeToFile(jsonData)
+            print "written to file"
             storeRecordingToCloud(path)
+            print "stored to cloud"
             sendEmail()
+            print "hopefully sent email"
 
         def on_error(self, error):
             print('Error received: {}'.format(error))
@@ -310,9 +313,9 @@ def playRecording(request):
     speechToText()
     print "called ibm watson"
     logger.debug("ibm watson called!")
-    writeToFile("sanika sHsah sanika shaha sanika shaha")
-    storeRecordingToCloud(path)
-    sendEmail()
+    # writeToFile("sanika sHsah sanika shaha sanika shaha")
+    # storeRecordingToCloud(path)
+    # sendEmail()
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
@@ -320,5 +323,4 @@ def main(request):
 
 def saveRecording(request):
     print "saved recording to bluemix and the path in the table"
-
 
