@@ -281,15 +281,16 @@ def createSuperUser(request):
     User.objects.create_superuser(username='admin', password='admin', email='sanika.shah@ibm.com')
     return HttpResponse("Admin User created locally")
 
+
 @csrf_exempt
 def playRecording(request):
     path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
-    logger.debug("ibm watson called!")
-    # writeToFile("sanika sHsah sanika shaha sanika shaha")
-    # storeRecordingToCloud(path)
-    # sendEmail()
+    storeRecordingToCloud(path)
+    print "stored data to file"
+    sendEmail()
+    print "email sent"
     return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
 
 def main(request):
