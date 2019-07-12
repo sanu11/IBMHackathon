@@ -1400,3 +1400,478 @@ Not Found: /favicon.ico
 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 5243
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 200 1059
+"GET /static/css/styles.css HTTP/1.1" 200 23676
+"GET /static/css/animate.css HTTP/1.1" 200 69747
+"GET /static/img/hero-bg.jpg HTTP/1.1" 200 95080
+"GET /register HTTP/1.1" 301 0
+"GET /register/ HTTP/1.1" 200 5389
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3040
+"GET /static/img/hero-bg.jpg HTTP/1.1" 200 8192
+- Broken pipe from ('127.0.0.1', 54675)
+
+"GET /register/ HTTP/1.1" 200 5389
+"GET /register/ HTTP/1.1" 200 5389
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /register/ HTTP/1.1" 200 5389
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3040
+"GET /static/img/hero-bg.jpg HTTP/1.1" 200 16384
+- Broken pipe from ('127.0.0.1', 54873)
+
+Not Found: /resgister
+"GET /resgister HTTP/1.1" 404 3357
+"GET /register/ HTTP/1.1" 200 5804
+"GET /register/ HTTP/1.1" 200 5753
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 2779
+"GET /login/ HTTP/1.1" 200 3066
+"GET /login/ HTTP/1.1" 200 3066
+"GET /login/ HTTP/1.1" 200 3066
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3066
+"GET /login/ HTTP/1.1" 200 3066
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/js/utils.js HTTP/1.1" 200 1373
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/js/utils.js HTTP/1.1" 200 1373
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/css/flexslider.css HTTP/1.1" 200 5666
+"GET /static/css/styles.css HTTP/1.1" 200 23676
+"GET /static/css/queries.css HTTP/1.1" 200 1059
+"GET /static/js/waypoints.min.js HTTP/1.1" 200 8044
+"GET /static/css/bootstrap.min.css HTTP/1.1" 200 99961
+"GET /static/js/bootstrap.min.js HTTP/1.1" 200 29110
+"GET /static/js/utils.js HTTP/1.1" 200 1373
+"GET /static/css/animate.css HTTP/1.1" 200 69747
+"GET /static/js/scripts.js HTTP/1.1" 200 3224
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 200 53436
+"GET /static/js/modernizr.js HTTP/1.1" 200 15243
+"GET /static/img/hero-bg.jpg HTTP/1.1" 200 95080
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3363
+"GET /login/ HTTP/1.1" 200 3275
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3092
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3092
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3066
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3014
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3014
+"GET /login/ HTTP/1.1" 200 3014
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 200 1396
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3014
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3014
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3061
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 55818)
+
+"GET /login/ HTTP/1.1" 200 3061
+"GET /login/ HTTP/1.1" 200 3061
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3061
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3061
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3061
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 55874)
+
+"GET /login/ HTTP/1.1" 200 3036
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3033
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3037
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 200 1400
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 55933)
+
+"GET /login/ HTTP/1.1" 200 3037
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3047
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 200 1400
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"GET /login/ HTTP/1.1" 200 3047
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3049
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56032)
+
+"GET /login/ HTTP/1.1" 200 3049
+"GET /login/ HTTP/1.1" 200 3049
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 200 95080
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56236)
+
+"POST /login/ HTTP/1.1" 200 3049
+"GET /register/ HTTP/1.1" 200 5736
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3044
+"GET /static/js/utils.js HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56338)
+
+"GET /login/ HTTP/1.1" 200 3044
+"GET /login/ HTTP/1.1" 200 3049
+"GET /login/ HTTP/1.1" 200 3060
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56382)
+
+"GET /login/ HTTP/1.1" 200 3060
+"GET /login/ HTTP/1.1" 200 3175
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3269
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56516)
+
+"GET /login/ HTTP/1.1" 200 3269

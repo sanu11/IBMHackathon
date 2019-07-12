@@ -279,6 +279,10 @@ def watson():
     #         f.write(i+"\n")
 
 @csrf_exempt
+def get_register_page(request):
+    return render(request,'scrum/register.html',{})
+
+@csrf_exempt
 def createSuperUser(request):
     User.objects.create_superuser(username='admin', password='admin', email='sanika.shah@ibm.com')
     return HttpResponse("Admin User created locally")
@@ -300,7 +304,7 @@ def playRecording(request):
     return render(request,'scrum/home.html',{"recording":"/static/recording.mp3","name":"recording.mp3","data":file_data})
 
 def main(request):
-    return render(request, 'scrum/index.html', {})
+    return render(request, 'scrum/home.html', {})
 
 def saveRecording(request):
     print "saved recording to bluemix and the path in the table"

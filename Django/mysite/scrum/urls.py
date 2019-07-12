@@ -10,6 +10,7 @@ urlpatterns = [
 	url(r'^login/', views.get_login_page),
 	url(r'^logincheck/', views.get_login_page),
 	url(r'^loginweb/',views.login_team),
+	url(r'^register/', views.get_register_page),
 
 	# android
 	url(r'^recording/', views.getRecording),
