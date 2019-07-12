@@ -14,6 +14,8 @@ from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
 
 import logging
+import mail
+import datetime
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 import ibm_boto3
@@ -99,7 +101,7 @@ def writeToFile(data):
         transcript.write(json.dumps(data, indent=2))
 
 def storeRecordingToCloud(recording_path):
-
+    logger.info("Inside cloud storage")
     # Constants for IBM COS values
     COS_ENDPOINT = "https://s3.us-south.cloud-object-storage.appdomain.cloud"  # Current list avaiable at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
     COS_API_KEY_ID = "8OzW_kP6cYhXmbGT2k4gDvD6su5PJc-3g3_zNc2WPPXD"  # eg "W00YiRnLW4a3fTjMB-oiB-2ySfTrFBIQQWanc--P3byk"
@@ -160,17 +162,18 @@ def get_item(cos,bucket_name, item_name):
 
 
 def sendEmail():
-    toaddrs = 'sanika.shah@ibm.com'
-    msg = 'Why,Oh why!'
-
-    username = "ibmhackathon89@gmail.com"
-    password = "ibmhackathon"
-    server = smtplib.SMTP('smtp.gmail.com:587')
-    server.starttls()
-    server.login(username, password)
-    server.sendmail(username, toaddrs, msg)
-    server.quit()
-
+    # toaddrs = 'sanika.shah@ibm.com'
+    # msg = 'Why,Oh why!'
+    #
+    # username = "ibmhackathon89@gmail.com"
+    # password = "ibmhackathon"
+    # server = smtplib.SMTP('smtp.gmail.com:587')
+    # server.starttls()
+    # server.login(username, password)
+    # server.sendmail(username, toaddrs, msg)
+    # server.quit()
+    email = mail('Sales email ' +datetime.now().strftime('%Y/%m/%d'), ['sanika.shah@ibm.com', 'ryan.kelly@ibm.com'])
+    email.send()
 
 def speechToText():
     path=SITE_ROOT+'/static/recording.wav'
