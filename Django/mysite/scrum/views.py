@@ -49,8 +49,8 @@ class Bimail:
         self.recipients = recipients
         self.recipients = recipients
         self.htmlbody = ''
-        self.sender = "mailsender135@gmail.com"
-        self.senderpass = 'mailsender135.'
+        self.sender = "ibmhackathon89@gmail.com"
+        self.senderpass = 'ibmhackathon'
         self.attachments = []
 
     def send(self):
@@ -170,7 +170,7 @@ def getRecording(request):
 
     path = '~/'
     # file = ContentFile(audiofile_byte)
-    path=SITE_ROOT+'/static/recording.wav'
+    path=SITE_ROOT+'/static/recording.mp3'
     with open(path, 'w+') as output:
         output.write(audiofile_byte)
 
@@ -207,7 +207,7 @@ def storeRecordingToCloud(recording_path):
                              config=Config(signature_version="oauth"),
                              endpoint_url=COS_ENDPOINT
                              )
-    multi_part_upload(cos,"hackathon-recordings","recording.wav",recording_path)
+    multi_part_upload(cos,"hackathon-recordings","recording.mp3",recording_path)
 
 
 def multi_part_upload(cos,bucket_name, item_name, file_path):
@@ -312,20 +312,19 @@ def watson():
     path2 = SITE_ROOT+'/static'
     parse.parse_audio(path)
     con_file=parse.convert()
-    with open(path2+'/recording.txt') as f:
+    with open(path2+'/recording.txt','w+') as f:
         for i in con_file:
             f.write(i+"\n")
 
 @csrf_exempt
 def playRecording(request):
-    path=SITE_ROOT+'/static/recording.wav'
+    path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
     logger.debug("ibm watson called!")
-    # writeToFile("sanika sHsah sanika shaha sanika shaha")
-    # storeRecordingToCloud(path)
-    # sendEmail()
-    return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
+    storeRecordingToCloud(path)
+    sendEmail()
+    return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3"})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
