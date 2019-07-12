@@ -285,7 +285,11 @@ def createSuperUser(request):
 
 @csrf_exempt
 def playRecording(request):
+<<<<<<< HEAD
     # return HttpResponse("WORKING")
+=======
+    return HttpResponse("WORKING")
+>>>>>>> c7a875718b75d6ac3d42b10c68323e73421f98d1
     path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"
