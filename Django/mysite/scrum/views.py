@@ -93,15 +93,16 @@ def writeToFile(data):
 
 
 def sendEmail():
-    MY_ADDRESS = "ibmhackathon@gmail.com"
-    PASSWORD = "ibmhackathon"
-    try:
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.ehlo()
-    except:
-        print 'Something went wrong...'
-    # s.starttls()
-    # s.login(MY_ADDRESS, PASSWORD)
+    toaddrs = 'sanika.shah@ibm.com'
+    msg = 'Why,Oh why!'
+
+    username = "ibmhackathon89@gmail.com"
+    password = "ibmhackathon"
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.starttls()
+    server.login(username, password)
+    server.sendmail(username, toaddrs, msg)
+    server.quit()
 
 
 def speechToText():
@@ -121,8 +122,7 @@ def speechToText():
             jsonData = json.dumps(data)
             print(jsonData)
             writeToFile(jsonData)
-            # sendEmail()
-            logger.debug(jsonData)
+            sendEmail()
 
         def on_error(self, error):
             print('Error received: {}'.format(error))
