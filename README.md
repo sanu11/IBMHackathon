@@ -2,8 +2,8 @@
 <b>Scrum Saver</b>
 
 
-<b>Important links to the app</b>
-Register Page:
+<b>Important links to the app</b><br>
+
 Login Page: http://demointernhack2019.mybluemix.net/login/ <br> 
 Register Page: http://demointernhack2019.mybluemix.net/register/ <br>
 Main Page: http://demointernhack2019.mybluemix.net/ <br>
