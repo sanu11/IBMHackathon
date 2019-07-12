@@ -4,9 +4,9 @@
 
 <b>Important links to the app</b><br>
 
+Main Page: http://demointernhack2019.mybluemix.net/ <br>
 Login Page: http://demointernhack2019.mybluemix.net/login/ <br> 
 Register Page: http://demointernhack2019.mybluemix.net/register/ <br>
-Main Page: http://demointernhack2019.mybluemix.net/ <br>
 
 <b>Features implemented</b>:<br>
 Recording audio from android app
