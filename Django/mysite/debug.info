@@ -43,3 +43,27 @@ AttributeError: 'module' object has no attribute 'now'
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 2576
 "GET /static/assets/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13580
+"GET / HTTP/1.1" 200 12111
+Internal Server Error: /play/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 314, in playRecording
+    sendEmail()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 266, in sendEmail
+    email.send()
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 70, in send
+    s.login(self.sender, self.senderpass)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/smtplib.py", line 622, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (535, '5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials k5sm9031682ioj.47 - gsmtp')
+"GET /play/ HTTP/1.1" 500 80892
+"GET /play/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 63839)
+
