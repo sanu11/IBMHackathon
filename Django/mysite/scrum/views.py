@@ -49,8 +49,8 @@ class Bimail:
         self.recipients = recipients
         self.recipients = recipients
         self.htmlbody = ''
-        self.sender = "mailsender135@gmail.com"
-        self.senderpass = 'mailsender135.'
+        self.sender = "ibmhackathon89@gmail.com"
+        self.senderpass = 'ibmhackathon'
         self.attachments = []
 
     def send(self):
