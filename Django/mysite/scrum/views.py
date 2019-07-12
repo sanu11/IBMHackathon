@@ -277,8 +277,12 @@ def watson():
             f.write(i+"\n")
 
 @csrf_exempt
-def playRecording(request):
+def createSuperUser(request):
     User.objects.create_superuser(username='admin', password='admin', email='sanika.shah@ibm.com')
+
+
+@csrf_exempt
+def playRecording(request):
     path=SITE_ROOT+'/static/recording.mp3'
     watson()
     print "called ibm watson"

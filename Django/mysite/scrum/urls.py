@@ -11,4 +11,6 @@ urlpatterns = [
 	# android
 	url(r'^recording/', views.getRecording),
 	url(r'^verify/', views.login_check),
+	url(r'^createuser/', views.createSuperUser),
+
 ]
