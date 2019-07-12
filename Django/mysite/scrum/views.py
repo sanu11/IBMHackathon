@@ -282,7 +282,7 @@ def speechToText():
             jsonData = json.dumps(data)
             print(jsonData)
             writeToFile(jsonData)
-            storeRecordingToCloud('/static/recording.wav')
+            storeRecordingToCloud(path)
             sendEmail()
 
         def on_error(self, error):
@@ -306,11 +306,12 @@ def speechToText():
 
 @csrf_exempt
 def playRecording(request):
+    path=SITE_ROOT+'/static/recording.wav'
     speechToText()
     print "called ibm watson"
     logger.debug("ibm watson called!")
     writeToFile("sanika sHsah sanika shaha sanika shaha")
-    storeRecordingToCloud('/static/recording.wav')
+    storeRecordingToCloud(path)
     sendEmail()
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
