@@ -4,10 +4,19 @@
 
 <b>Important links to the app</b>
 Register Page:
-Login Page: http://demointernhack2019.mybluemix.net/login/ <br> <br>
+Login Page: http://demointernhack2019.mybluemix.net/login/ <br> 
 Register Page: http://demointernhack2019.mybluemix.net/register/ <br>
 Main Page: http://demointernhack2019.mybluemix.net/ <br>
 
+<b>Features implemented</b>:<br>
+Recording audio from android app
+Sending the audio to backend server written in Django
+Storing the audio file in IBM Cloud
+Querying IBM Watson for speech to text conversion of the audio file recorded
+Displaying the audio file and the transcript in the webapp<
+
+<b>Features incomplete/to implement:</b><br
+Register and login on webapp - backend and frontend code is ready, integration is pending
 
 
 There are times when you cannot recall what was discussed in the scrum meetings and don’t really want to go back and ask the same question again Or maybe you missed a scrum meeting and want to be updated about what is going on
