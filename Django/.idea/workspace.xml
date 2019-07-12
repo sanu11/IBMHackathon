@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5baa1c4f-97fe-4c9f-bbeb-18a3a0fa87e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysite/scrum/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/scrum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/scrum/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="278" column="12" selection-start-line="278" selection-start-column="12" selection-end-line="278" selection-end-column="12" />
+            <state relative-caret-position="344">
+              <caret line="281" column="51" selection-start-line="281" selection-start-column="51" selection-end-line="281" selection-end-column="51" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -160,8 +159,8 @@
         <option value="$PROJECT_DIR$/mysite/scrum/mail.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/templates/scrum/login.html" />
         <option value="$PROJECT_DIR$/mysite/scrum/parse.py" />
-        <option value="$PROJECT_DIR$/mysite/scrum/views.py" />
         <option value="$PROJECT_DIR$/mysite/scrum/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/scrum/views.py" />
       </list>
     </option>
   </component>
@@ -266,12 +265,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562800121214</updated>
       <workItem from="1562800122290" duration="725000" />
-      <workItem from="1562801123184" duration="28049000" />
+      <workItem from="1562801123184" duration="28166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28774000" />
+    <option name="totallyTimeSpent" value="28891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
@@ -408,22 +407,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="278" column="12" selection-start-line="278" selection-start-column="12" selection-end-line="278" selection-end-column="12" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/scrum/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/scrum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="281" column="51" selection-start-line="281" selection-start-column="51" selection-end-line="281" selection-end-column="51" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
