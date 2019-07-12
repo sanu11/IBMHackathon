@@ -1875,3 +1875,207 @@ ValueError: The view scrum.views.login_team didn't return an HttpResponse object
 - Broken pipe from ('127.0.0.1', 56516)
 
 "GET /login/ HTTP/1.1" 200 3269
+"GET /login/ HTTP/1.1" 200 3233
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56562)
+
+"GET /login/ HTTP/1.1" 200 3233
+"GET /login/ HTTP/1.1" 200 3233
+"GET /login/ HTTP/1.1" 200 3229
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56587)
+
+"GET /login/ HTTP/1.1" 200 3229
+"GET /login/ HTTP/1.1" 200 3203
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56608)
+
+"GET /login/ HTTP/1.1" 200 3203
+"GET /login/ HTTP/1.1" 200 3203
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56633)
+
+"GET /login/ HTTP/1.1" 200 3203
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56650)
+
+- Broken pipe from ('127.0.0.1', 56649)
+
+"GET /login/ HTTP/1.1" 200 3203
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3203
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 200 1397
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56673)
+
+"GET /login/ HTTP/1.1" 200 3203
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 3225
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/flexslider.css HTTP/1.1" 304 0
+"GET /static/css/animate.css HTTP/1.1" 304 0
+"GET /static/css/queries.css HTTP/1.1" 304 0
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /static/js/scripts.js HTTP/1.1" 304 0
+"GET /static/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/js/waypoints.min.js HTTP/1.1" 304 0
+"GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /static/js/jquery.flexslider.js HTTP/1.1" 304 0
+"GET /static/js/modernizr.js HTTP/1.1" 304 0
+"GET /static/img/hero-bg.jpg HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56696)
+
+"POST /loginweb/ HTTP/1.1" 500 14364
+"POST /loginweb/ HTTP/1.1" 500 59
+- Broken pipe from ('127.0.0.1', 56698)
+
+"GET /login/ HTTP/1.1" 200 3225
+"GET /static/js/utils.js HTTP/1.1" 304 0
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /loginweb/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view scrum.views.login_team didn't return an HttpResponse object. It returned None instead.
+"POST /loginweb/ HTTP/1.1" 500 14364
+- Broken pipe from ('127.0.0.1', 56705)
+
+"POST /loginweb/ HTTP/1.1" 500 14364
+"GET /login/ HTTP/1.1" 200 3063
+"GET /static/js/utils.js HTTP/1.1" 304 0

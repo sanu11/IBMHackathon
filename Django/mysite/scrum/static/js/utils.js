@@ -1,5 +1,5 @@
 function loginTeam() {
-    // console.log('updateform');
+    console.log('updateform');
     var updateform = $('#' + 'loginform');
     var csrftoken = getCookie('csrftoken');
     // var name = document.getElementById("company");
