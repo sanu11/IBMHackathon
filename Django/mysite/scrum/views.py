@@ -290,13 +290,13 @@ def createSuperUser(request):
 
 @csrf_exempt
 def playRecording(request):
-    # path=SITE_ROOT+'/static/recording.mp3'
-    # qdata = watson()
-    # print "called ibm watson"
-    # storeRecordingToCloud(path)
-    # print "stored data to file"
-    # sendEmail()
-    # print "email sent"
+    path=SITE_ROOT+'/static/recording.mp3'
+    qdata = watson()
+    print "called ibm watson"
+    storeRecordingToCloud(path)
+    print "stored data to file"
+    sendEmail()
+    print "email sent"
     path = SITE_ROOT+"/static/recording.txt"
     with open (path, "r") as myfile:
         file_data= myfile.read().splitlines() 
@@ -304,7 +304,10 @@ def playRecording(request):
     return render(request,'scrum/home.html',{"recording":"/static/recording.mp3","name":"recording.mp3","data":file_data})
 
 def main(request):
-    return render(request, 'scrum/home.html', {})
+    path = SITE_ROOT+"/static/recording.txt"
+    with open (path, "r") as myfile:
+        file_data= myfile.read().splitlines() 
+    return render(request, 'scrum/home.html', {"recording":"/static/recording.mp3","name":"recording.mp3","data":file_data})
 
 def saveRecording(request):
     print "saved recording to bluemix and the path in the table"

@@ -2079,3 +2079,18 @@ ValueError: The view scrum.views.login_team didn't return an HttpResponse object
 "POST /loginweb/ HTTP/1.1" 500 14364
 "GET /login/ HTTP/1.1" 200 3063
 "GET /static/js/utils.js HTTP/1.1" 304 0
+"GET /register/ HTTP/1.1" 200 5736
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Ryan.Kelly@ibm.com/Desktop/IBMHackathon/Django/mysite/scrum/views.py", line 307, in main
+    return render(request, 'scrum/home.html', {"recording":"/static/recording.mp3","name":"recording.mp3","data":file_data})
+NameError: global name 'file_data' is not defined
+"GET / HTTP/1.1" 500 63724
+"GET / HTTP/1.1" 200 5488
+"GET /static/recording.mp3 HTTP/1.1" 304 0
