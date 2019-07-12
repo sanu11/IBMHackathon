@@ -8,7 +8,7 @@ from Queue import Queue, Full
 def parse_audio(path):
     global global_path
     global_path = path
-    audio = path+'/recording.wav'
+    audio = path+'/recording.mp3'
     CHUNK = 1024
     # Note: It will discard if the websocket client can't consumme fast enough
     # So, increase the max size as per your choice
@@ -46,7 +46,7 @@ def parse_audio(path):
         audio_source = AudioSource(audio_file)
         speech_to_text.recognize_using_websocket(
             audio=audio_source,
-            content_type='audio/wav',
+            content_type='audio/mp3',
             recognize_callback=myRecognizeCallback,
             model='en-US_BroadbandModel',
             speaker_labels=True)
@@ -59,6 +59,7 @@ def parse_audio(path):
 
 def convert():
     with io.open(global_path+"/sample.json",encoding='utf-8') as f:
+        # print f.read()
         d = json.load(f)
 
     final_conv=[]

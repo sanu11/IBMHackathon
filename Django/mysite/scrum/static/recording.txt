@@ -1,1 +1,21 @@
-{"results": [{"alternatives": [{"timestamps": [["sure", 29.06, 29.33], ["is", 29.81, 30.17], ["yes", 30.84, 31.26], ["I", 31.26, 31.32], ["think", 31.32, 31.6], ["so", 31.6, 31.94], ["that's", 32.1, 32.39], ["probably", 32.39, 32.86], ["and", 32.86, 33.26], ["Wallace", 33.26, 33.78], ["yes", 33.81, 34.23], ["that's", 34.23, 34.47], ["right", 34.47, 34.86], ["you", 35.1, 35.23], ["know", 35.23, 35.42], ["her", 35.42, 35.72], ["she", 35.95, 36.26], ["will", 36.26, 36.4], ["teach", 36.4, 36.67], ["you", 36.67, 36.75], ["to", 36.75, 37.11], ["know", 37.33, 37.83], ["but", 37.86, 38.0], ["she", 38.0, 38.11], ["told", 38.11, 38.34], ["me", 38.34, 38.46], ["last", 38.46, 38.78], ["term", 38.78, 39.26]], "transcript": "sure is yes I think so that's probably and Wallace yes that's right you know her she will teach you to know but she told me last term "}], "final": false}], "result_index": 1}
+Speaker 0 : hi home what's name 
+Speaker 1 : I'm your home my Ricky 
+Speaker 0 : late late hi you student 
+Speaker 1 : hello Ricky here I my lesson morning you new to 
+Speaker 0 : name's yes first are student I've here six 
+Speaker 1 : new this now for six that's long 
+Speaker 0 : have been months time not long see in %HESITATION 
+Speaker 1 : a a so you intermediate what you 
+Speaker 0 : months really three I'm advanced this a 
+Speaker 1 : it's about one teacher could her but got the head 
+Speaker 0 : intermediate is remember she's red sure 
+Speaker 1 : an name is I so 
+Speaker 0 : I yes that's and 
+Speaker 1 : killed think Wallace that's you her will you 
+Speaker 0 : probably right she to but told last how have been 
+Speaker 1 : yes teach she term you only week 
+Speaker 0 : know me here wow long do with family 
+Speaker 1 : know a we the I'm at YMCA the I'm for more do know any places 
+Speaker 0 : long live staying at looking permanent of yes my has spare in apartment looking a mate 
+Speaker 1 : not the someone good friend room she's flat 
+Speaker 0 : well you a for 
