@@ -133,9 +133,10 @@ def register_team(request):
         obj.password =password
         obj.save()
         request.session["team_name"]=team_name
+        print "Success"
         return HttpResponse("Success")
 
-
+@csrf_exempt
 def login_team(request):
     if request.method == "POST":
         print "in web_login"
@@ -271,14 +272,11 @@ def sendEmail():
 def watson():
     path = SITE_ROOT + '/static'
     path2 = SITE_ROOT+'/static'
-    qdata = parse.parse_audio(path)
-
-    # con_file=parse.convert(path)
-    # with open(path2+'/recording.txt','w+') as f:
+    parse.parse_audio(path)
+    # con_file=parse.convert()
+    # with open(path2+'/recording.txt') as f:
     #     for i in con_file:
     #         f.write(i+"\n")
-    return qdata
-            
 
 @csrf_exempt
 def createSuperUser(request):
@@ -288,20 +286,21 @@ def createSuperUser(request):
 
 @csrf_exempt
 def playRecording(request):
-    # return HttpResponse("WORKING")
-    path=SITE_ROOT+'/static/recording.mp3'
-    qdata = watson()
-    print "called ibm watson"
-    # return HttpResponse("WORKING")
-    storeRecordingToCloud(path)
-    print "stored data to file"
-    sendEmail()
-    print "email sent"
-    return render(request,'scrum/recording.html',{"recording":"/static/recording.mp3","name":"recording.mp3","data":qdata})
+    # path=SITE_ROOT+'/static/recording.mp3'
+    # qdata = watson()
+    # print "called ibm watson"
+    # storeRecordingToCloud(path)
+    # print "stored data to file"
+    # sendEmail()
+    # print "email sent"
+    path = SITE_ROOT+"/static/recording.txt"
+    with open (path, "r") as myfile:
+        file_data= myfile.read().splitlines() 
+
+    return render(request,'scrum/home.html',{"recording":"/static/recording.mp3","name":"recording.mp3","data":file_data})
 
 def main(request):
     return render(request, 'scrum/index.html', {})
 
 def saveRecording(request):
     print "saved recording to bluemix and the path in the table"
-
