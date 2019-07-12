@@ -1,4 +1,4 @@
-Dango==1.11.22
+Django==1.11.22
 pytz==2019.1
 dj-static==0.0.6
 gunicorn==19.1.1
