@@ -12,7 +12,7 @@ from .models import Team
 from django.http import HttpResponse
 from django.contrib.auth.hashers import check_password
 from django.views.decorators.csrf import *
-from ..scrum import parse
+import parse
 import logging
 from datetime import datetime
 from ibm_watson import SpeechToTextV1
@@ -308,7 +308,7 @@ def sendEmail():
 
 
 def watson():
-    path = SITE_ROOT + '/static/recording.wav'
+    path = SITE_ROOT + '/static'
     path2 = SITE_ROOT+'/static'
     parse.parse_audio(path)
     con_file=parse.convert()

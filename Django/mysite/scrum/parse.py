@@ -5,8 +5,10 @@ from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 from Queue import Queue, Full
 
-def parse_audio(audio):
-
+def parse_audio(path):
+    global global_path
+    global_path = path
+    audio = path+'/recording.wav'
     CHUNK = 1024
     # Note: It will discard if the websocket client can't consumme fast enough
     # So, increase the max size as per your choice
@@ -50,13 +52,13 @@ def parse_audio(audio):
             speaker_labels=True)
 
     # write to raw transcript 
-    with open('sample.json','w+') as f :
+    with open(global_path+'/sample.json','w+') as f :
         while not q.empty():
             f.write(json.dumps(q.get()))
 
 
 def convert():
-    with io.open("sample.json",encoding='utf-8') as f:
+    with io.open(global_path+"/sample.json",encoding='utf-8') as f:
         d = json.load(f)
 
     final_conv=[]
