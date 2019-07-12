@@ -183,7 +183,8 @@ def getRecording(request):
 def writeToFile(data):
     path2=SITE_ROOT+'/static/recording.txt'
     with open(path2, "w+") as transcript:
-        transcript.write(json.dumps(data, indent=2))
+        # transcript.write(json.dumps(data, indent=2))
+        transcript.writable(data)
 
 def storeRecordingToCloud(recording_path):
     logger.info("Inside cloud storage")
@@ -304,6 +305,9 @@ def playRecording(request):
     speechToText()
     print "called ibm watson"
     logger.debug("ibm watson called!")
+    writeToFile("sanika sHsah sanika shaha sanika shaha")
+    storeRecordingToCloud('/static/recording.wav')
+    sendEmail()
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
