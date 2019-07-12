@@ -18,8 +18,6 @@ import tempfile
 from django.core.files import File
 import logging
 import smtplib
-
-
 from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 import json
@@ -96,8 +94,12 @@ def writeToFile(data):
 
 def sendEmail():
     MY_ADDRESS = "ibmhackathon@gmail.com"
-    PASSWORD = "sasasadadad"
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    PASSWORD = "ibmhackathon"
+    try:
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+    except:
+        print 'Something went wrong...'
     # s.starttls()
     # s.login(MY_ADDRESS, PASSWORD)
 
@@ -120,6 +122,7 @@ def speechToText():
             print(jsonData)
             writeToFile(jsonData)
             # sendEmail()
+            logger.debug(jsonData)
 
         def on_error(self, error):
             print('Error received: {}'.format(error))
@@ -144,6 +147,7 @@ def speechToText():
 def playRecording(request):
     speechToText()
     print "called ibm watson"
+    logger.debug("ibm watson called!")
     return render(request,'scrum/recording.html',{"recording":"/static/recording.wav","name":"recording.wav"})
 
 def main(request):
