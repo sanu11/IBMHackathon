@@ -7,6 +7,7 @@ urlpatterns = [
 
 	url(r'^$',views.main),
 	url(r'^recording/',views.getRecording),
-	url(r'^play/',views.playRecording)
+	url(r'^play/',views.playRecording),
+	url(r'^login/', views.get_login_page),
 
 ]

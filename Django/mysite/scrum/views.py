@@ -124,6 +124,10 @@ logger = logging.getLogger(__name__)
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
+def get_login_page(request):
+    return render(request,'scrum/login.html',{})
+
+
 def register_team(request):
     if request.method == "POST":
         team_name = request.POST["team_name"]
@@ -184,7 +188,7 @@ def writeToFile(data):
     path2=SITE_ROOT+'/static/recording.txt'
     with open(path2, "w+") as transcript:
         # transcript.write(json.dumps(data, indent=2))
-        transcript.writable(data)
+        transcript.write(data)
 
 def storeRecordingToCloud(recording_path):
     logger.info("Inside cloud storage")
