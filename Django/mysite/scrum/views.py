@@ -277,6 +277,10 @@ def watson():
     #         f.write(i+"\n")
 
 @csrf_exempt
+def get_register_page(request):
+    return render(request,'scrum/register.html',{})
+
+@csrf_exempt
 def createSuperUser(request):
     User.objects.create_superuser(username='admin', password='admin', email='sanika.shah@ibm.com')
     return HttpResponse("Admin User created locally")
